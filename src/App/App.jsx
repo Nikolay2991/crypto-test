@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import BalanceWallet from '../BalanceWallet/BalanceWallet';
 
@@ -19,50 +19,6 @@ function App() {
     fetchMyAPI()
   }, [limit])
 
-  // useEffect(() => {
-  //   if (!!address) {
-  //     async function fetchMyAPI() {
-  //       const responce = await fetch(`https://btcbook.guarda.co/api/address/${address}`, {
-  //         method: "GET"
-  //       });
-  //       const result = await responce.json();
-  //       console.log(result);
-  //       setCoin(result);
-  //     }
-  //     fetchMyAPI()
-  //   }
-      
-  // }, [submit])
-
-  // function handleSubmit (e) {
-  //   e.preventDefault();
-  //   setAddress(e.target.address.value);
-  //   setSubmit(!submit);
-  //   e.target.reset();
-  // };
-  
-  // function handleClick () {
-  //   async function fetchMyAPI() {
-  //     const responce = await fetch(`https://btcbook.guarda.co/api/address/${address}`, {
-  //       method: "GET"
-  //     });
-  //     const result = await responce.json();
-  //     const arrRes = []
-  //     for (let key in result) {
-  //       arrRes.push(`${key}, ${result[key]}`);
-  //     }
-  //     const blob = new Blob([arrRes.join('\n')], {type : 'text/scv'});
-  //     let url = window.URL.createObjectURL(blob);
-  //     let anchor = document.createElement('a');
-  //     anchor.href = url;
-  //     anchor.download = 'balance.csv';
-  //     document.body.append(anchor);
-  //     anchor.style = 'display: none';
-  //     anchor.click();
-  //     anchor.remove();
-  //   }
-  //   fetchMyAPI()
-  // }
   return (
     <div className="App">
       <div className="container">

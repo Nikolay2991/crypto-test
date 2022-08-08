@@ -56,10 +56,8 @@ function BalanceWallet () {
         <>
             <h2 className='text-center mb-2'>Проверка баланса кошелька BTC</h2>
             <form onSubmit={(e) => handleSubmit(e)} className="form-wallet d-flex">
-                {/* <div className="row"> */}
                     <input type="text" className='form-wallet__input form-control me-3' name='address' placeholder='Введите номер кошелька'/>
                     <button className='form-wallet__btn btn btn-warning' type='submit'>Узнать баланс</button>
-                {/* </div> */}
             </form>
             {coin &&
                 <div className='result-wallet' ref={coinInfo}><p className="result-wallet__info">Баланс кошелька {coin.addrStr} = {coin.balance}</p><a className='btn btn-success' href="#" onClick={handleClick}>Скачать</a></div>
