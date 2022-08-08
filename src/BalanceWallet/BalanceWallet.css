@@ -1,0 +1,19 @@
+.form-wallet {
+    justify-content: center;
+}
+
+.result-wallet {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form-wallet__input {
+    width: 50%;
+}
+
+.result-wallet__info {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
